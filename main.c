@@ -9,6 +9,6 @@
 // main is where program execution starts
 int main(void)
 {
-    printf("%s", "Hello, Coding World!");
+    printf("%s", "Hello, World!");
     return EXIT_SUCCESS;
 } // end of function main
