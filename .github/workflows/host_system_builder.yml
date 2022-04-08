@@ -21,7 +21,7 @@ jobs:
         CC: ccache gcc-10
     - run: cppcheck --project=build/compile_commands.json
     - run: scan-build meson compile -C build
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       if: failure()
       with:
         name: MacOS_Meson_Testlog
@@ -44,7 +44,7 @@ jobs:
       env:
         CC: ccache gcc
     - run: meson compile -C build
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v3
       if: failure()
       with:
         name: Windows_Meson_Testlog
